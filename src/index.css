@@ -1,0 +1,169 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+.fontLato{
+    font-family: 'Lato', sans-serif;
+}
+
+.fontInter{
+    font-family: 'Inter', sans-serif;
+}
+
+.textShadow{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.cardHeader:hover{
+    transform: translateY(-8px);
+}
+
+.grayColor{
+    background-color: #232730;
+}
+
+.bgBlur{
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(2px);
+}
+
+.liBgOpacity:hover{
+    background-color: rgba(0, 6, 58, 0.192);
+}
+
+/* .cardCuidados{
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+
+.cardCuidados:hover{
+    transform: translateY(-6px);
+} */
+
+.cardCuidados {
+    background: linear-gradient(to right, #1F2937, #33445c);
+    background-size: 200% 100%;
+    background-position: left;
+    transition: background-position 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.cardCuidados:hover {
+    background-position: right;
+}
+
+.cardNum{
+  background: linear-gradient(45deg, #3802ca, #9376d8, #0011ff);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gridCards{
+    @apply hidden grid-cols-3 w-[80%] justify-items-center max-lg:grid-cols-3 max-lg:space-y-2;
+}
+
+.cardHeader{
+    @apply bg-gradient-to-r from-[#1F2937] to-[#33445c] shadow-inner shadow-gray-800 border-[1px] border-slate-600 font-semibold p-6 h-44 w-[90%] flex flex-col items-center justify-center text-orange-200 space-y-3 rounded-4xl text-center max-lg:h-30 max-lg:w-[90%] max-lg:text-sm max-lg:p-2 max-lg:space-y-4 max-lg:rounded-2xl duration-500 cursor-pointer;
+}
+
+.h2CardHeader{
+    @apply text-5xl font-bold max-lg:text-[20px] text-orange-100;
+}
+
+.pCardHeader{
+    @apply text-sm text-gray-400 max-lg:text-[12px];
+}
+
+.cardAlert{
+    @apply px-8 py-10 m-4 bg-slate-700 text-white text-lg rounded-3xl border-l-6 border-blue-500 max-md:text-sm;
+}
+
+.procCard{
+    @apply bg-gradient-to-r from-[#1F2937] to-[#33445c]  border-[1px] border-gray-600 h-70 w-90 p-4 rounded-2xl flex flex-col items-center justify-evenly text-center max-lg:w-[90%];
+}
+
+.procCard {
+    background: linear-gradient(to right, #1F2937, #33445c);
+    background-size: 200% 100%;
+    background-position: left;
+    transition: background-position 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.procCard:hover {
+    background-position: right;
+}
+
+
+.numProcCard{
+    @apply text-orange-200 bg-gradient-to-r from-[#1F2937] to-[#141d2b] py-2 px-3 rounded-full;
+}
+
+.h2ProcCard{
+    @apply text-orange-200;
+}
+
+.pProcCard{
+    @apply text-gray-100;
+}
+
+.verMaisProcCard{
+    @apply hidden text-blue-500 cursor-pointer;
+}
+
+.cardCuidados{
+    @apply bg-gradient-to-r from-[#1F2937] to-[#2a394e] border-[2px] border-gray-700 py-8 px-6 rounded-3xl w-80 space-y-7 flex flex-col items-center max-lg:w-[98%];
+}
+
+.imgCardCuidados{
+    @apply w-70 h-40 rounded-2xl border-[1px] border-gray-700 max-lg:w-[90%] max-lg:h-[90%];
+}
+
+.tituloCardCuidados{
+    @apply text-blue-500 text-lg;
+}
+
+.ulCardCuidados{
+    @apply list-disc mx-4 space-y-6 w-60 h-50 ;
+}
+
+.liCardCuidados{
+    @apply text-white marker:text-blue-500;
+}
+
+.btnCardCuidados{
+    @apply text-blue-500 border-2 border-blue-500 py-2 px-6 rounded-full hover:text-white hover:bg-blue-500 cursor-pointer duration-300;
+}
+
+.modalCuidados{
+ @apply bg-gradient-to-r from-[#1F2937] to-[#2a3a50] py-6 rounded-2xl shadow-lg w-[50%] h-[95%] overflow-y-scroll text-center justify-items-center space-y-4 max-md:w-[80%] max-md:h-[80%];
+}
+
+.modalCuidadoTittle{
+    @apply text-3xl text-orange-200 font-semibold mb-2 py-2 max-md:text-xl;
+}
+
+.modalCuidadoBtn{
+    @apply px-4 w-20 py-2 cursor-pointer duration-300 hover:bg-gray-900 hover:text-orange-200 bg-gray-800 text-white rounded-md max-md:text-sm;
+}
+
+.imgModalCuidados{
+    @apply w-[90%] h-90 rounded-lg border-[1px] border-orange-200 max-md:h-50;
+}
+
+.pModalCuidados{
+    @apply text-orange-200 font-bold mb-4 mx-2;
+}
+
+.ulModalCuidados{
+    @apply list-disc text-gray-100 text-left text-sm px-12 space-y-3;
+}
+
+.liModalCuidados{
+    @apply font-bold;
+}
+
+
+.cardResultados{
+    @apply bg-gradient-to-r from-[#1F2937] to-[#2e3e55] w-70 max-lg:w-40 h-60 max-lg:h-44 flex flex-col items-center justify-center rounded-4xl space-y-3 border-[1px] border-gray-700 text-center;
+}
