@@ -20,7 +20,7 @@ export default function ModalResultados() {
       {/* Botão para abrir o modal */}
       <button
         onClick={() => setIsOpen(true)}
-        className="duration-300 bg-gradient-to-r from-[#1a212c] to-[#25364e] border-[2px] hover:text-blue-500 hover:border-[2px] hover:border-blue-500 py-4 max-md:py-1 max-md:px-4 px-12 rounded-full text-blue-200 text-xl font-semibold max-md:text-sm cursor-pointer"
+        className="duration-300 bg-gradient-to-r from-[#1a212c] to-[#25364e] border-[2px] hover:text-blue-500 hover:border-[2px] hover:border-blue-500 py-4 max-lg:py-1 max-lg:px-4 px-12 rounded-full text-blue-200 text-xl font-semibold max-lg:text-sm cursor-pointer"
       >
         Ver processo completo de recuperação
       </button>
@@ -28,9 +28,9 @@ export default function ModalResultados() {
       {/* Fundo escuro e modal */}
       {isOpen && (
         <div className="fixed z-50 inset-0 flex justify-items-center items-center justify-center bgBlur" onClick={() => setIsOpen(false)}>
-          <div onClick={(e) => e.stopPropagation()} className="z-50 fixed bg-slate-800 py-6 rounded-4xl shadow-lg w-[60%] max-lg:w-[90%] h-[80%] max-lg:h-[50%] border-[1px] border-slate-500 flex flex-col space-y-2 justify-between">
+          <div onClick={(e) => e.stopPropagation()} className="z-50 fixed bg-slate-800 py-6 rounded-4xl shadow-lg w-[60%] max-lg:w-[90%] h-[80%] max-lg:h-[80%] border-[1px] border-slate-500 flex flex-col space-y-2 justify-between">
 
-            <div className="flex items-center p-2 justify-center max-md:flex-col-reverse text-center border-b-[1px] border-slate-500 max-md:text-xl">
+            <div className="flex items-center p-2 justify-center max-lg:flex-col-reverse text-center border-b-[1px] border-slate-500 max-md:text-xl">
               <button
                 onClick={() => setIsOpen(false)}
                 className="px-4 py-2 bg-slate-800 font-semibold text-white text-center rounded-md w-60 cursor-pointer"
