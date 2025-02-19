@@ -28,7 +28,7 @@ export default function ModalResultados() {
       {/* Fundo escuro e modal */}
       {isOpen && (
         <div className="fixed z-50 inset-0 flex justify-items-center items-center justify-center bgBlur" onClick={() => setIsOpen(false)}>
-          <div onClick={(e) => e.stopPropagation()} className="z-50 fixed bg-slate-800 py-6 rounded-4xl shadow-lg w-[60%] max-lg:w-[90%] h-[80%] max-lg:h-[80%] border-[1px] border-slate-500 flex flex-col space-y-2 justify-between">
+          <div onClick={(e) => e.stopPropagation()} className="z-50 fixed bg-slate-800 py-6 rounded-4xl shadow-lg w-[60%] max-lg:w-[90%] h-[80%] max-lg:h-[60%] border-[1px] border-slate-500 flex flex-col space-y-2 justify-between">
 
             <div className="flex items-center p-2 justify-center max-lg:flex-col-reverse text-center border-b-[1px] border-slate-500 max-md:text-xl">
               <button
@@ -46,22 +46,22 @@ export default function ModalResultados() {
 
               <h3 className="text-lg text-blue-400 mb-2">Evolução dos Resultados</h3>
 
-              <div className="bg-slate-800 p-3 w-full space-y-8 rounded-lg">
+              <div className="bg-slate-800 space-y-8 rounded-lg">
                 <div className="flex justify-between h-full font-semibold text-gray-300 border-b border-gray-700 pb-2 mb-2">
                   <span>Período</span>
                   <span>Evolução</span>
                 </div>
                 <div className="flex justify-between border-b border-gray-700 py-2">
                   <span>1-2 semanas</span>
-                  <span>Redução inicial do inchaço e desconforto</span>
+                  <span className="text-right">Redução inicial do inchaço e desconforto</span>
                 </div>
                 <div className="flex justify-between border-b border-gray-700 py-2">
                   <span>1-2 meses</span>
-                  <span>Retorno gradual às atividades e uso de malha compressiva</span>
+                  <span className="text-right">Retorno gradual às atividades e uso de malha compressiva</span>
                 </div>
                 <div className="flex justify-between py-2">
                   <span>3-6 meses</span>
-                  <span>Resultados finais visíveis com contorno firme e estético</span>
+                  <span className="text-right">Resultados finais visíveis com contorno firme e estético</span>
                 </div>
               </div>
 
