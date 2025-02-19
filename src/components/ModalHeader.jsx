@@ -30,7 +30,7 @@ export default function ModalHeader() {
       {/* Fundo escuro e modal */}
       {isOpen && (
         <div className="fixed z-50 inset-0 flex  items-center justify-center bgBlur" onClick={() => setIsOpen(false)}>
-          <div onClick={(e) => e.stopPropagation()} className="z-50 fixed bg-slate-800 py-6 rounded-4xl shadow-lg w-[60%] max-lg:w-[90%] h-[80%] max-lg:h-[70%] border-[1px] border-slate-500 flex flex-col space-y-2 justify-between">
+          <div onClick={(e) => e.stopPropagation()} className="z-50 fixed bg-slate-800 py-6 rounded-4xl shadow-lg w-[60%] max-lg:w-[90%] h-[80%] max-lg:h-[75%] border-[1px] border-slate-500 flex flex-col space-y-2 justify-between">
             <div className="w-full flex  max-md:flex-col-reverse items-center justify-items-center text-center justify-between border-b-[1px] border-slate-500 max-md:text-xl">
                   {/* Botão para fechar */}
             <h2 className="text-orange-200 text-4xl text-left px-8 py-4 max-md:text-3xl">Sobre a Cruroplastia</h2>
