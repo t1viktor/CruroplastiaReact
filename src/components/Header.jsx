@@ -3,9 +3,9 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import ModalHeader from "./ModalHeader";
 
 const logo = "/img/LOGO_TRANSPARENTE_1.png";
-const torso = "/img/torsoFemininoImg.jpeg";
+const torso = "/img/imgHeaderCruroplastia.png";
 
-const tittleHeader = "Abdominoplastia";
+const tittleHeader = "Cruroplastia";
 const descHeader =
   "Procedimento cirúrgico avançado realizado por especialistas, proporcionando resultados seguros e naturais";
 

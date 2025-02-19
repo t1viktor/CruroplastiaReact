@@ -5,6 +5,7 @@ import Modal04 from "./ModalCuidados/Modal04";
 import Modal05 from "./ModalCuidados/Modal05";
 import Modal06 from "./ModalCuidados/Modal06";
 import Modal07 from "./ModalCuidados/Modal07";
+import Modal08 from "./ModalCuidados/Modal08";
 
 /* import cardimg01 from '../public/img/pacienteDeitado.jpg';
 import cardimg02 from '../public/img/comidaSaudavel.jpg';
@@ -22,40 +23,42 @@ const cardimg05 = '/img/cintaPosCirurgica.jpg';
 const cardimg06 = '/img/pessoaCurvada.jpg';
 const cardimg07 = '/img/fotoSorrindoMto.JPEG';
 
-const tittleCard01Cuidados = "Cuidados Imediatos";
-const li01Card01Cuidados = "Repouso adequado nas primeiras semanas";
-const li02Card01Cuidados = "Movimentação suave e progressiva";
-const li03Card01Cuidados = "Acompanhamento da cicatrização";
+const tittleCard01Cuidados = "Cuidados Imediatos e Gerais";
+const li01Card01Cuidados = "Repouso Relativo";
+const li02Card01Cuidados = "Movimentação Leve";
+const li03Card01Cuidados = "Atenção aos Sinais de Alerta";
 
-const tittleCard02Cuidados = "Alimentação";
-const li01Card02Cuidados = "Dieta rica em proteínas";
-const li02Card02Cuidados = "Hidratação adequada";
-const li03Card02Cuidados = "Suplementação conforme orientação";
+const tittleCard02Cuidados = "Cuidados com a Alimentação";
+const li01Card02Cuidados = "O Que Comer";
+const li02Card02Cuidados = "O Que Evitar";
 
-const tittleCard03Cuidados = "Cuidados com a cicatriz";
-const li01Card03Cuidados = "Limpeza diária com água e sabão neutro";
-const li02Card03Cuidados = "Uso de pomadas cicatrizantes";
-const li03Card03Cuidados = "Evitar exposição solar";
+const tittleCard03Cuidados = "Higiene e Cuidados com a Ferida Operatória";
+const li01Card03Cuidados = "Banhos";
+const li02Card03Cuidados = "Curativos";
+const li03Card03Cuidados = "Secagem Suave";
 
-const tittleCard04Cuidados = "Atividades físicas";
-const li01Card04Cuidados = "Retorno gradual às atividades";
-const li02Card04Cuidados = "Evitar esforços excessivos";
-const li03Card04Cuidados = "Orientação de um profissional";
+const tittleCard04Cuidados = "Uso da Malha de Compressão e Meias de Compressão";
+const li01Card04Cuidados = "Malha de Compressão para Coxas";
+const li02Card04Cuidados = "Meias de Compressão";
+const li03Card04Cuidados = "Duração";
 
-const tittleCard05Cuidados = "Consultas de acompanhamento";
-const li01Card05Cuidados = "Avaliação periódica do cirurgião";
-const li02Card05Cuidados = "Exames de rotina conforme orientação";
-const li03Card05Cuidados = "Esclarecimento de dúvidas";
+const tittleCard05Cuidados = "Posições Corporais e Movimentação";
+const li01Card05Cuidados = "Ao Dormir";
+const li02Card05Cuidados = "Ao Sentar e Levantar";
+const li03Card05Cuidados = "Evite Exercícios Pesados";
 
-const tittleCard06Cuidados = "Cuidados prolongados";
-const li01Card06Cuidados = "Manutenção da saúde e bem-estar";
-const li02Card06Cuidados = "Acompanhamento médico regular";
-const li03Card06Cuidados = "Adoção de hábitos saudáveis";
+const tittleCard06Cuidados = "Fisioterapia Pós-Operatória e Drenagem Linfática";
+const li01Card06Cuidados = "Drenagem Linfática Manual";
+const li02Card06Cuidados = "Outras Terapias";
 
-const tittleCard07Cuidados = "Cuidados com a saúde mental";
-const li01Card07Cuidados = "Apoio emocional e psicológico";
-const li02Card07Cuidados = "Manutenção da autoestima";
-const li03Card07Cuidados = "Busca por equilíbrio e qualidade de vida";
+const tittleCard07Cuidados = "Proteção Contra o Sol";
+const li01Card07Cuidados = "Evite Exposição Solar Direta";
+const li02Card07Cuidados = "Roupa Adequada";
+
+const tittleCard08Cuidados = "Proteção Contra o Sol";
+const li01Card08Cuidados = "Não Fume";
+const li02Card08Cuidados = "Acompanhamento Médico";
+const li03Card08Cuidados = "Paciência e Disciplina";
 
 export default function Cuidados() {
     return (
@@ -80,7 +83,7 @@ export default function Cuidados() {
                     <ul className="ulCardCuidados">
                         <li className="liCardCuidados">{li01Card02Cuidados}</li>
                         <li className="liCardCuidados">{li02Card02Cuidados}</li>
-                        <li className="liCardCuidados">{li03Card02Cuidados}</li>
+                        
                     </ul>
                     <Modal02 />
                 </div>
@@ -124,7 +127,7 @@ export default function Cuidados() {
                     <ul className="ulCardCuidados">
                         <li className="liCardCuidados">{li01Card06Cuidados}</li>
                         <li className="liCardCuidados">{li02Card06Cuidados}</li>
-                        <li className="liCardCuidados">{li03Card06Cuidados}</li>
+                        
                     </ul>
                     <Modal06 />
                 </div>
@@ -135,9 +138,20 @@ export default function Cuidados() {
                     <ul className="ulCardCuidados">
                         <li className="liCardCuidados">{li01Card07Cuidados}</li>
                         <li className="liCardCuidados">{li02Card07Cuidados}</li>
-                        <li className="liCardCuidados">{li03Card07Cuidados}</li>
+                        
                     </ul>
                     <Modal07 />
+                </div>
+
+                <div className="cardCuidados">
+                    <img className="imgCardCuidados" src={cardimg07} alt="" />
+                    <h2 className="tituloCardCuidados">{tittleCard08Cuidados}</h2>
+                    <ul className="ulCardCuidados">
+                        <li className="liCardCuidados">{li01Card08Cuidados}</li>
+                        <li className="liCardCuidados">{li02Card08Cuidados}</li>
+                        <li className="liCardCuidados">{li03Card08Cuidados}</li>
+                    </ul>
+                    <Modal08 />
                 </div>
                 
             </div>

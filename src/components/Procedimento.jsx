@@ -1,11 +1,11 @@
-const descProcedimento = "A abdominoplastia é uma cirurgia que visa remodelar o abdômen, removendo o excesso de pele e gordura, além de corrigir a musculatura abdominal quando necessário.";
+const descProcedimento = "A cruroplastia, também conhecida como lifting de coxas, é uma cirurgia que remove o excesso de pele e gordura das coxas, proporcionando um contorno mais firme e estético.";
 
 const tituloProcCard01 = "Avaliação Inicial";
 const tituloProcCard02 = "Preparação";
 const tituloProcCard03 = "Procedimento";
 const tituloProcCard04 = "Recuperação";
 
-const descProcCard01 = "Análise detalhada do abdômen e definição do plano cirúrgico personalizado.";
+const descProcCard01 = "Análise detalhada das coxas e definição do plano cirúrgico personalizado.";
 const descProcCard02 = "Orientações específicas e exames pré-operatórios para garantir sua segurança.";
 const descProcCard03 = "Cirurgia realizada com técnicas modernas e equipe especializada.";
 const descProcCard04 = "Acompanhamento próximo e cuidados específicos para garantir os melhores resultados.";
@@ -19,51 +19,31 @@ export default function Procedimento() {
             <div className="grid grid-cols-2 gap-12 max-lg:grid-cols-1 justify-items-center"> 
 
                 <div className="procCard cardProcHover">
-
                     <h2 className="numProcCard">01</h2>
-
                     <h2 className="h2ProcCard">{tituloProcCard01}</h2>
-
                     <p className="pProcCard">{descProcCard01}</p>
-
                     <button className="verMaisProcCard">Mais detalhes</button>
-
                 </div>
 
                 <div className="procCard">
-
                     <h2 className="numProcCard">02</h2>
-
                     <h2 className="h2ProcCard">{tituloProcCard02}</h2>
-
                     <p className="pProcCard">{descProcCard02}</p>
-
                     <button className="verMaisProcCard">Mais detalhes</button>
-
                 </div>
 
                 <div className="procCard">
-
                     <h2 className="numProcCard">03</h2>
-
                     <h2 className="h2ProcCard">{tituloProcCard03}</h2>
-
                     <p className="pProcCard">{descProcCard03}</p>
-
                     <button className="verMaisProcCard">Mais detalhes</button>
-
                 </div>
 
                 <div className="procCard">
-
                     <h2 className="numProcCard">04</h2>
-
                     <h2 className="h2ProcCard">{tituloProcCard04}</h2>
-
                     <p className="pProcCard">{descProcCard04}</p>
-
                     <button className="verMaisProcCard">Mais detalhes</button>
-
                 </div>
 
             </div>

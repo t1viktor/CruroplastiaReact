@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const tituloModal = " Uso da Cinta e das Meias de Compressão";
+const tituloModal = "Posições Corporais e Movimentação";
 
 export default function Modal05() {
   const [isOpen, setIsOpen] = useState(false);
@@ -43,129 +43,21 @@ export default function Modal05() {
            
 
             <p className="text-blue-400 text-left px-4">
-            O uso adequado da cinta e das meias de compressão é essencial para a recuperação, pois ajuda na contenção do edema, no suporte à pele e na prevenção de trombose.
+            A postura correta e o cuidado ao se mover fazem a diferença no conforto e na cicatrização da região operada.
             </p>
 
-            <div className="grid grid-cols-2 max-lg:grid-cols-1 w-full p-3 gap-5">
+            <div className="grid grid-cols-1 max-lg:grid-cols-1 w-full p-3 gap-5">
 
               <div className="bg-slate-700 px-2 py-4 text-left rounded-lg w-full space-y-5">
-                <h2 className="text-blue-400">
-                Cinta Abdominal
-                </h2>
+               
                 <ul className="list-disc px-6 text-gray-100 space-y-5">
-                  <li className="liCardCuidados">Utilize a cinta 24 horas por dia durante o primeiro mês, removendo apenas para a higiene. O tempo de uso poderá variar de acordo com a orientação médica, mas em média, ela deve ser usada por cerca de dois a três meses.</li>
-                  <li className="liCardCuidados">Certifique-se de que a cinta está ajustada ao corpo, mas não apertada demais. Ajustes muito intensos podem prejudicar a circulação e causar desconforto.</li>
+                  <li className="liCardCuidados">Ao Dormir: Prefira dormir de barriga para cima, com um leve ângulo elevado na cabeceira, caso indicado. O uso de almofadas sob os joelhos pode ajudar a reduzir a tensão na área operada.</li>
+                  <li className="liCardCuidados">Ao Sentar e Levantar: Faça movimentos lentos e suaves, evitando flexionar as coxas exageradamente nos primeiros dias. Caso necessário, apoie-se cuidadosamente em uma superfície para levantar-se.</li>
+                  <li className="liCardCuidados">Evite Exercícios Pesados: Atividades físicas intensas, alongamentos extremos e exercícios que forcem a região devem ser evitados até a liberação médica, que normalmente ocorre após algumas semanas.</li>
                  
                 </ul>
               </div>
-
-              <div className="bg-slate-700 px-2 py-4 text-left rounded-lg w-full space-y-5">
-                <h2 className="text-blue-400">
-                Meias de Compressão
-                </h2>
-                <ul className="list-disc px-6 text-gray-100 space-y-5">
-                  <li className="liCardCuidados">As meias de compressão são fundamentais para prevenir tromboses. Use-as diariamente pelo período orientado pelo seu cirurgião (em geral, de 14 a 28 dias).</li>
-                  <li className="liCardCuidados">As meias podem ser retiradas para dormir (após a primeira semana), conforme a orientação médica.</li>
-                  
-                </ul>
-              </div>
-
-              </div>
-              <h2 className="text-blue-400 text-left text-2xl">Cuidados com o Ajuste</h2>
-
-              <div className="cardAlert w-[80%]">
-              <ul className="text-left list-disc space-y-3 liCardCuidados">
-                <h2 className="text-xl text-left">A cinta deve estar:</h2>
-                <li>Bem ajustada, mas não excessivamente apertada</li>
-                <li>Sem dobras ou rugas que possam marcar a pele</li>
-                <li>Cobrindo toda a região operada</li>
-              </ul>
-
-            </div>
-
-            <h2 className="pModalCuidados">Benefícios do Uso Correto</h2>
-
-            <div className="grid grid-cols-2 max-lg:grid-cols-1 w-full p-3 gap-5">
-
-              <div className="bg-slate-700 px-2 py-4 text-left rounded-lg w-full space-y-5">
-                
-                <ul className="list-disc px-6 text-gray-100 space-y-5">
-                  <li className="liCardCuidados">Redução do Inchaço</li>
-                  <li className="liCardCuidados">Ajuda a diminuir o edema pós-operatório</li>
-                </ul>
-              </div>
-
-              <div className="bg-slate-700 px-2 py-4 text-left rounded-lg w-full space-y-5">
-                
-                <ul className="list-disc px-6 text-gray-100 space-y-5">
-                  <li className="liCardCuidados">Melhor Cicatrização</li>
-                  <li className="liCardCuidados">Auxilia na adesão dos tecidos</li>
-                </ul>
-
-              </div>
-
-              <div className="bg-slate-700 px-2 py-4 text-left rounded-lg w-full space-y-5">
-                
-                <ul className="list-disc px-6 text-gray-100 space-y-5">
-                  <li className="liCardCuidados">Suporte Muscular</li>
-                  <li className="liCardCuidados">Oferece apoio à musculatura operada</li>
-                </ul>
-
-              </div>
-                
-
-              </div>
-              <h2 className="text-blue-400 text-left text-2xl">Higienização da Cinta</h2>
-
-              <div className="cardAlert w-[80%]">
-              <ul className="text-left list-disc space-y-3 liCardCuidados">
-                <li>Lave a cinta delicadamente com sabão neutro</li>
-                <li>Não use alvejante ou produtos abrasivos</li>
-                <li>Seque à sombra, evitando exposição direta ao sol</li>
-                <li>Recomenda-se ter duas cintas para revezamento</li>
-              </ul>
-
-            </div>
-
-            <h2 className="text-blue-400 text-left text-2xl">Sinais de Ajuste Inadequado</h2>
-
-              <div className="cardAlert w-[80%]">
-              <ul className="text-left list-disc space-y-3 liCardCuidados">
-                <li>Dificuldade para respirar</li>
-                <li>Dormência excessiva</li>
-                <li>Marcas profundas na pele</li>
-                <li>Dobras ou enrugamento da cinta</li>
-              </ul>
-
-            </div>
-
-
-{/*  */}
-                <h2 className="text-blue-400 text-center text-2xl">Meias de Compressão</h2>
-
-<div className="grid grid-cols-2 max-lg:grid-cols-1 w-full p-3 gap-5">
-
-              <div className="bg-slate-700 px-2 py-4 text-left rounded-lg w-full space-y-5">
-
-                <h2 className="text-blue-400 text-left text-xl">Período de Uso</h2>
-                
-                <ul className="list-disc px-6 text-gray-100 space-y-5">
-                  <li className="liCardCuidados">Use durante 14 a 28 dias</li>
-                  <li className="liCardCuidados">Pode ser retirada para dormir após a primeira semana</li>
-                </ul>
-              </div>
-
-              <div className="bg-slate-700 px-2 py-4 text-left rounded-lg w-full space-y-5">
-
-                <h2 className="text-blue-400 text-left text-xl">Importância</h2>
-                
-                <ul className="list-disc liCardCuidados px-6 text-gray-100 space-y-5">
-                  <li className="">Previne trombose</li>
-                  <li className="">Melhora a circulação</li>
-                  <li>Reduz o risco de edema</li>
-                </ul>
-              </div>
-              </div>
+              </div>         
  
           </div>
         </div>

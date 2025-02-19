@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 
 const modalimg01 = '/img/pessoaLavandoMaos.jpg';
-const modalimg02 = '/img/materiaisHigiene.jpg'
 
 const tituloModal = "Higiene e Cuidados com a Ferida Operatória";
 
@@ -58,15 +57,9 @@ export default function Modal03() {
             </p>
 
             <ul className="cardAlert text-gray-100 list-disc liCardCuidados mx-6 text-left">
-              <li>Banhos: Somente banhos rápidos, e com autorização médica, geralmente após o segundo dia. Evite molhar a área da incisão nas primeiras semanas.</li>
-              <li>Curativos: Siga as orientações médicas para troca dos curativos, e nunca mexa na área operada sem higienizar bem as mãos antes</li>
-            </ul>
-
-            <img loading="lazy" className="imgModalCuidados" src={modalimg02} alt="" />
-
-            <ul className="cardAlert text-gray-100 list-disc liCardCuidados mx-6 text-left">
-              <li>Uso de Antissépticos: Em geral, a limpeza da ferida deve ser feita com solução antisséptica recomendada pela equipe médica. Não utilize produtos caseiros, como álcool, sem recomendação.</li>
-              <li>Secagem: Após a higiene, seque cuidadosamente com uma toalha limpa, sem friccionar.</li>
+              <li>Banhos: Em geral, banhos rápidos e mornos são liberados após 24 a 48 horas, seguindo as orientações do seu cirurgião. Evite água muito quente e não esfregue a região operada.</li>
+              <li>Curativos: Troque-os conforme as instruções médicas, sempre com as mãos limpas. Use apenas produtos recomendados e, se indicado, antissépticos recomendados pelo cirurgião.</li>
+              <li>Secagem Suave: Após o banho, seque a região delicadamente com uma toalha macia, sem atrito excessivo. Mantenha o local limpo e arejado.</li>
             </ul>
 
             </div>

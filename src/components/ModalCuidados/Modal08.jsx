@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 
-const modalimg01 = '/img/pessoaCurvada.jpg';
+const modalimg01 = '/img/pacienteTranquila.jpg';
 
-const tituloModal = "Fisioterapia Pós-Operatória e Drenagem Linfática";
+const tituloModal = "Recomendações Finais";
 
-export default function Modal06() {
+export default function Modal08() {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
@@ -48,22 +48,25 @@ export default function Modal06() {
               alt=""
             />
 
-            <p className="pModalCuidados">
-            Alguns procedimentos podem acelerar a recuperação e melhorar o resultado estético.
-            </p>
+            <h2 className="pModalCuidados">Adotar essas medidas garante um pós-operatório mais confortável, seguro e com excelentes resultados após a cruroplastia. Em caso de dúvidas ou qualquer alteração inesperada, entre em contato com o seu cirurgião. O cuidado e a atenção nessa fase são fundamentais para alcançar o contorno das coxas desejado e retomar suas atividades com plena confiança.</h2>
 
-            <div className="cardAlert">
-              <ul className="text-left space-y-6">
-                
-                <li className="list-disc marker:text-blue-500">Drenagem Linfática Manual: Recomendada para ajudar a reduzir o inchaço e eliminar líquidos retidos, a drenagem deve ser feita por um profissional capacitado e conforme orientação do cirurgião.</li>
-                <li className="list-disc marker:text-blue-500">Outras Terapias: Seu médico pode indicar sessões de ultrassom, laser terapêutico ou outras técnicas para otimizar a cicatrização e diminuir fibroses.</li>
 
-              </ul>
+            <div className="cardAlert text-left space-y-4">
+              
+              <li className="marker:text-blue-400 list-disc">Não Fume: O cigarro dificulta a oxigenação dos tecidos, comprometendo a cicatrização e aumentando o risco de complicações.
+              </li>
+
+              
+              <li className="marker:text-blue-400 list-disc">Acompanhamento Médico: Siga todas as consultas de revisão para que seu cirurgião acompanhe a evolução da cicatriz e do resultado.</li>
+
+              <li className="marker:text-blue-400 list-disc">Paciência e Disciplina: A recuperação completa é um processo gradual. Ao seguir rigorosamente as orientações do seu cirurgião, você estará no caminho certo para um resultado satisfatório e duradouro.
+              </li>
+
             </div>
+
             
-            </div>
           </div>
-        
+        </div>
       )}
     </div>
   );

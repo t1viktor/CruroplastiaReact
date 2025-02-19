@@ -49,29 +49,15 @@ export default function Modal01() {
             />
 
             <p className="pModalCuidados">
-              Após a abdominoplastia, o corpo precisa de um período de
-              recuperação para se ajustar e cicatrizar. Siga as orientações
-              abaixo para proteger a área operada e reduzir o risco de
-              complicações:
+            Nos primeiros dias após a cirurgia, o corpo precisa de tempo para iniciar a cicatrização e adaptar-se às mudanças estruturais.
             </p>
 
-            <ul className="ulModalCuidados">
-              <li className="liModalCuidados">Evite esforços físicos: Nos primeiros 15 dias, evite qualquer tipo de esforço ou movimento brusco. Isso inclui carregar peso, subir escadas em excesso ou fazer exercícios físicos.</li>
-              <li className="liModalCuidados">Repouse adequadamente: O repouso é essencial nos primeiros dias. Prefira descansar em uma posição levemente inclinada, com o tronco elevado e os joelhos flexionados para aliviar a tensão na área abdominal.</li>
-              <li className="liModalCuidados">Movimente-se com cuidado: Movimente-se devagar e, sempre que possível, com o auxílio de outra pessoa, principalmente nas primeiras 48 horas. Pequenas caminhadas ajudam a ativar a circulação e prevenir trombose.</li>
-              <li className="liModalCuidados">Atenção aos sinais de alerta: Caso observe sangramentos, febre, dor intensa e persistente, vermelhidão ou inchaço anormal, entre em contato com sua equipe médica imediatamente.</li>
+            <ul className="ulModalCuidados marker:text-blue-500">
+              <li className="liModalCuidados">Descanse o máximo possível nas primeiras 48 a 72 horas. Evite atividades físicas intensas e esforços que possam tensionar a área operada.</li>
+              <li className="liModalCuidados">Pequenas caminhadas dentro de casa são permitidas após o primeiro dia, ajudando a melhorar a circulação e reduzir o risco de trombose.</li>
+              <li className="liModalCuidados">Observe se há vermelhidão intensa, inchaço incomum, febre, dor excessiva ou secreção na ferida. Caso perceba algo fora do normal, contate imediatamente seu cirurgião.</li>
+              
             </ul>
-
-            <h2 className="text-blue-400 text-3xl">Sinais de Alerta</h2>
-            <div className="cardAlert space-y-3">
-              <h2 className="text-yellow-500 text-xl text-left">Contate seu médico imediatamente se observar:</h2>
-              <ul className="list-disc text-left font-normal">
-                <li>Sangramentos</li>
-                <li>Febre</li>
-                <li>Dor intensa e persistente</li>
-                <li>Vermelhidão ou inchaço anormal</li>
-              </ul>
-            </div>
           </div>
         </div>
       )}

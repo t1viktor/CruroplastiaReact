@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 const modalimg01 = '/img/pacienteTranquila.jpg';
 
-const tituloModal = "Recomendações Finais para um Pós-operatório Tranquilo";
+const tituloModal = "Proteção Contra o Sol";
 
 export default function Modal07() {
   const [isOpen, setIsOpen] = useState(false);
@@ -49,18 +49,17 @@ export default function Modal07() {
             />
 
             <p className="pModalCuidados p-3 text-left">
-            A recuperação completa é um processo gradual, que depende tanto do trabalho da equipe médica quanto dos cuidados diários que você realiza. Com disciplina e atenção às recomendações, você estará no caminho para uma recuperação mais rápida e segura, alcançando os melhores resultados possíveis na sua abdominoplastia.
+            Proteger a cicatriz do sol é fundamental para evitar o escurecimento da cicatriz e melhorar o aspecto final da pele.
+
             </p>
 
             <div className="cardAlert text-left space-y-4">
-              <h2 className="text-blue-400 text-xl">Controle do Inchaço</h2>
-              <li className="marker:text-blue-400 list-disc">Utilize compressas frias na região abdominal conforme a orientação médica para ajudar a reduzir o inchaço.</li>
+              
+              <li className="marker:text-blue-400 list-disc">Evite Exposição Solar Direta: Pelo menos nos primeiros 3 meses, mantenha a região coberta por roupas leves e de preferência use protetor solar com alto FPS assim que autorizado pelo cirurgião.</li>
 
-              <h2 className="text-blue-400 text-xl">Evite Tabagismo</h2>
-              <li className="marker:text-blue-400 list-disc">Não fume, pois o cigarro compromete a oxigenação dos tecidos e dificulta a cicatrização.</li>
+              
+              <li className="marker:text-blue-400 list-disc">Roupa Adequada: Caso saia ao ar livre, use calças leves e confortáveis que cubram a área operada, protegendo-a da luz solar direta.</li>
 
-              <h2 className="text-blue-400 text-xl">Atente-se aos retornos médicos</h2>
-              <li className="marker:text-blue-400 list-disc">Compareça a todas as consultas de revisão para garantir que sua recuperação está no caminho certo.</li>
             </div>
 
             

@@ -1,10 +1,8 @@
 import { useState, useEffect } from "react";
 
-const modalimg01 = '/img/CA1A2644.JPEG';
-const modalimg02 = '/img/fotoExplicando.JPEG';
-const modalimg03 = '/img/fotoConsulta.JPEG';
+const modalimg01 = '/img/comidaSaudavel.jpg';
 
-const tituloModal = "Fisioterapia Pós-operatória";
+const tituloModal = "Uso da Malha de Compressão e Meias de Compressão";
 
 export default function Modal04() {
   const [isOpen, setIsOpen] = useState(false);
@@ -44,52 +42,43 @@ export default function Modal04() {
               </button>
             </div>
 
-            <div className="grid grid-cols-2 max-lg:grid-cols-1 gap-4 space-y-12 px-2">
-
-<div className="flex items-center justify-center">
-            <img loading="lazy"
-              className="imgCardCuidados"
+            <img
+              className="imgModalCuidados"
               src={modalimg01}
               alt=""
             />
-</div>
 
-<div className=" w-full bg-slate-700 rounded-lg flex flex-col items-center justify-center justify-items-center p-6">
-  <h2 className="text-blue-400 text-lg font-bold">Drenagem Linfática Manual:</h2>
-  <p className="text-gray-100 ">A drenagem linfática é uma técnica suave que ajuda a reduzir o inchaço e eliminar líquidos retidos, o que melhora o conforto e acelera a recuperação. Realizada por fisioterapeutas especializados, a drenagem previne a formação de fibroses e otimiza a circulação linfática.</p>
-</div>
+<p className="pModalCuidados">
+A compressão adequada desempenha um papel crucial na redução do inchaço, na prevenção de hematomas e na modelagem adequada do contorno das coxas.
+            </p>
 
-<div className="flex items-center justify-center">
-            <img loading="lazy"
-              className="imgCardCuidados"
-              src={modalimg02}
-              alt=""
-            />
-</div>
+            <div className="grid grid-cols-2 max-lg:grid-cols-1 w-full p-3 gap-5">
 
-<div className=" w-full bg-slate-700 rounded-lg flex flex-col items-center justify-center justify-items-center p-6">
-  <h2 className="text-blue-400 text-lg font-bold">Carboxiterapia:</h2>
-  <p className="text-gray-100 ">Esse tratamento utiliza pequenas injeções de gás carbônico no tecido subcutâneo, o que melhora a oxigenação local e contribui para uma cicatrização mais uniforme e saudável. A carboxiterapia também ajuda a reduzir a formação de fibroses, mantendo a pele mais lisa e flexível.</p>
-</div>
+              <div className="bg-slate-700 px-2 py-4 text-left rounded-lg w-full space-y-5">
+                <h2 className="text-blue-400">
+                Malha de Compressão para Coxas:
+                </h2>
+                <ul className="list-disc px-6 text-gray-100 space-y-5">
+                  <li className="liCardCuidados">
+Duração: Geralmente indicada para uso contínuo (removendo apenas para higiene) nas primeiras 4 a 6 semanas, conforme orientação do cirurgião.
+</li>
+                  <li className="liCardCuidados">Ajuste: A malha deve ficar justa, porém confortável, sem comprimir a ponto de causar dor ou interferir na circulação.
+                  </li>       
+                </ul>
+              </div>
 
-<div className="flex items-center justify-center">
-            <img loading="lazy"
-              className="imgCardCuidados "
-              src={modalimg03}
-              alt=""
-            />
-</div>
+              <div className="bg-slate-700 px-2 py-4 text-left rounded-lg w-full space-y-5">
+                <h2 className="text-blue-400">
+                Meias de Compressão: 
+                </h2>
+                <ul className="list-disc px-6 text-gray-100 space-y-5">
+                  <li className="liCardCuidados">Duração: Se o seu cirurgião indicar, utilize as meias de compressão para as pernas, especialmente nas primeiras 3 a 4 semanas, a fim de prevenir trombose e melhorar a circulação.</li>
+                  <li className="liCardCuidados">Uso: Siga as orientações quanto ao tempo diário de uso. Em geral, são utilizadas durante o dia e podem ser removidas para dormir (após a primeira semana), se autorizado.</li>
+                </ul>
+              </div>
 
-<div className=" w-full bg-slate-700 rounded-lg flex flex-col items-center justify-center justify-items-center p-6">
-  <h2 className="text-blue-400 text-lg font-bold">Terapias com Laser:</h2>
-  <p className="text-gray-100 ">O uso de lasers específicos no pós-operatório ajuda a estimular a regeneração celular, melhorando a qualidade da cicatriz e diminuindo a inflamação. Lasers terapêuticos também auxiliam na prevenção de retrações cutâneas e na formação de cicatrizes hipertróficas.</p>
-</div>
+              </div>            
 
- </div>
-
- <div className="cardAlert">Esses tratamentos devem ser realizados por profissionais especializados, em frequência e duração recomendadas pelo seu cirurgião e fisioterapeuta.</div>
-
-            
           </div>
         </div>
       )}
